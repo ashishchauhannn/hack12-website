@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with-device-width, initial-scale=1.0">
+        <title>University Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+       
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                 <a href=""><img src="img/Qlogo.png" alt=""><p id="gyan">Gyan-Universe</p></a>
+                 
+                 <div class="nav-links" id="navlinks">
+                     <i class="fa fa-times" onclick="hidemenu()"></i>
+                     <ul>
+                         <li><a href="univ.html">Home</a></li>
+                         <li><a href="">About</a></li>
+                         <li><a href="">Course</a></li>
+                         <li><a href="">Blog</a></li>
+                         <li><a href="">Contact</a></li>
+                     </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Quantum University</h1>
+                <p id="forum">A campus that lets you connected with your innerself..</p>
+                <a class="hero-btn" href="https://quantumuniversity.edu.in/">Visit Us To Know More</a>
+
+            </div>
+        </section>
+        <!-- course -->
+        <section class="course">
+            <h1>Courses</h1>
+            <p></p> 
+            <div class="row">
+                <div class="course-col">
+                    <h3>Web Development</h3>
+                    <p>Web Development is the work involved in developing a website for the internet(world Wide Web) or an internet. Web Development can range from developing a simple single static pages of plain text to complex web applications, electronic bussiness, and social network services.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Android Development</h3>
+                    <p>Android software development is the process by which applications are created for devices running the Android operating system. Google states that "Android apps can be written using Kotlin, Java, and C++ languages" using the Android software development kit (SDK), while using other languages is also possible.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Designing</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- java script for toggle menu -->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function hidemenu(){
+                navlinks.style.right = "-200px";
+            }
+            function showmenu(){
+                navlinks.style.right = "0";
+            }
+        </script>
+    </body>
+</html>
